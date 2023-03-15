@@ -1,11 +1,10 @@
-#require "./produto.rb"
-
-class Mercado < Produto
-    def initialize(nome, preco)
-        @nome = nome
-        @preco = preco
+class Mercado
+    def initialize(produto, preco)
+      @produto = produto
+      @preco = preco
     end
+    
     def comprar
-        puts "Você comprou o produto #{@nome} no valor de R$#{@preco}"
+      puts "Você comprou o produto #{@produto} no valor de #{@preco}"
     end
-end
+   end

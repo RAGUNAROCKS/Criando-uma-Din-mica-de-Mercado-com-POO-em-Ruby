@@ -1,8 +1,8 @@
-require "./produto.rb"
-require "./mercado.rb"
-
+require_relative 'produto'
+require_relative 'mercado'
+ 
 produto = Produto.new
-produto.nome = "Pão Integral"
-produto.preco = 10.00
-mercado = Mercado.new(produto.nome, produto.preco)
-mercado.comprar
+produto.nome = 'Tomate'
+produto.preco = 2.50
+ 
+Mercado.new(produto.nome, produto.preco).comprar
